@@ -16,13 +16,11 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <img
+          src={require('@site/static/img/new-readyset-logo.png').default}
+          alt="Ready Set Logo"
+          style={{ width: '220px', margin: '24px auto 0', display: 'block' }}
+        />
       </div>
     </header>
   );
